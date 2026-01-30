@@ -88,3 +88,8 @@ BMI/
 │
 ├── (Tamanna-minor) Estimate the BMI.pdf
 └── README.md
+
+
+git add .
+git commit -m "Updated BMI logic"
+git push
