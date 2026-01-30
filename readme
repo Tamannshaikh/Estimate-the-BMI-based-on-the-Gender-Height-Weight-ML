@@ -1,0 +1,90 @@
+cd backend   
+python app.py
+
+github 
+repo - Estimate-BMI-Using-Gender-Height-Weight-ML
+
+
+
+# Estimate BMI Using Gender, Height & Weight (Machine Learning)
+
+## 📌 Project Overview
+This project estimates **Body Mass Index (BMI)** using **Machine Learning**
+based on **Gender, Height, and Weight**.  
+The system includes a **web-based frontend** and a **Python backend**
+that performs BMI prediction and analysis.
+
+---
+
+## 🧠 Machine Learning
+- Dataset: BMI data (CSV & JSON)
+- Model Type: Classification / Regression
+- Features:
+  - Gender
+  - Height (cm)
+  - Weight (kg)
+- Output:
+  - BMI Value
+  - BMI Category (Underweight, Normal, Overweight, Obese)
+
+---
+
+## 🌐 Frontend
+- HTML pages:
+  - Home
+  - BMI Calculator
+  - BMI Analysis
+  - Ideal BMI
+- CSS for styling
+- JavaScript for validation & interactivity
+
+---
+
+## ⚙️ Backend
+- Python (Flask-based)
+- Handles:
+  - Data processing
+  - Model prediction
+  - Result generation
+
+---
+
+## 📁 Project Structure
+
+
+BMI/
+│
+├── assets/
+│   ├── hero.png
+│   ├── hero2.png
+│   └── hero3.png
+│
+├── backend/
+│   ├── data/
+│   │   ├── bmi.csv
+│   │   ├── BMI_Predictions.csv
+│   │   ├── BMI_Full_Predictions.csv
+│   │   └── BMI_Full_Predictions.json
+│   │
+│   ├── BMI_Classification_Project.ipynb
+│   └── app.py
+│
+├── css/
+│   ├── analysis.css
+│   ├── bmi.css
+│   ├── ideal.css
+│   └── style.css
+│
+├── js/
+│   ├── analysis.js
+│   ├── bmi.js
+│   ├── ideal.js
+│   └── script.js
+│
+├── index.html
+├── bmi.html
+├── analysis.html
+├── ideal.html
+│
+├── (Tamanna-minor) Estimate the BMI.pdf
+└── README.md

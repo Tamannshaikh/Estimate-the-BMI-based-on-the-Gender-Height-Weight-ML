@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= THEME ================= */
+body.dark {
+  background: linear-gradient(135deg, #1a1533, #4b1b6d);
+  color: #fff;
+}
+
+body.light {
+  background: #f4f6fb;
+  color: #111;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.logo {
+  font-weight: 600;
+  color: #45d3ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 14px;
+  border-radius: 12px;
+}
+
+.nav-links .active a {
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+}
+
+.theme-toggle {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ================= HEADER ================= */
+.dashboard-header {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.dashboard-header p {
+  opacity: 0.85;
+}
+
+/* ================= FILTER PANEL ================= */
+.filter-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-card {
+  width: 900px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.filter-card h3 {
+  margin-bottom: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+}
+
+.filters select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+/* ================= STATS ================= */
+.stats-grid {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: left;
+}
+
+.stat-card h2 {
+  font-size: 32px;
+}
+
+.stat-card p {
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+/* ================= CHART GRID ================= */
+.charts-grid {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* ================= CHART CARD ================= */
+.chart-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.06)
+  );
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.chart-card h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ================= LIGHT MODE FIXES ================= */
+body.light .filter-card,
+body.light .stat-card,
+body.light .chart-card {
+  background: #fff;
+  color: #111;
+}
+
+body.light .nav-links .active a {
+  color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-card {
+    width: 95%;
+  }
+}
+/* ================= LIGHT MODE FULL FIX ================= */
+
+/* General text visibility */
+body.light {
+  background: #f4f6fb;
+  color: #111;
+}
+
+/* Navbar */
+body.light .navbar {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+body.light .logo {
+  color: #4b1b6d;
+}
+
+body.light .nav-links a {
+  color: #111;
+}
+
+body.light .nav-links .active a {
+  color: #fff;
+}
+
+/* Cards & Panels */
+body.light .filter-card,
+body.light .stat-card,
+body.light .chart-card {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Headings */
+body.light h1,
+body.light h2,
+body.light h3,
+body.light p {
+  color: #111;
+}
+
+/* Dropdowns */
+body.light select {
+  background: #f4f6fb;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+/* Stats numbers */
+body.light .stat-card h2 {
+  color: #4b1b6d;
+}
+
+/* Chart titles */
+body.light .chart-card h3 {
+  color: #333;
+}

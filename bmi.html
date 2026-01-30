@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart BMI Analyzer</title>
+  <link rel="stylesheet" href="css/bmi.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="dark">
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Smart BMI Analyzer</div>
+
+  <ul class="nav-links">
+    <li class="active"><a href="bmi.html">BMI Estimator</a></li>
+    <li><a href="ideal.html">Ideal Weight</a></li>
+    <li><a href="analysis.html">Dashboard</a></li>
+  </ul>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- Header -->
+<header class="header">
+  <h1>BMI Estimator</h1>
+  <p>Enter your details to calculate your Body Mass Index</p>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+
+  <!-- Left Card -->
+  <div class="card">
+    <h2>Your Information</h2>
+
+    <label>Gender</label>
+    <div class="gender-box">
+      <button class="gender active" onclick="selectGender(this)">Male</button>
+      <button class="gender" onclick="selectGender(this)">Female</button>
+    </div>
+
+    <label>Height</label>
+    <div class="input-group">
+      <input type="number" id="height" value="170">
+      <select id="heightUnit">
+        <option value="cm">cm</option>
+        <option value="ft">ft</option>
+        <option value="inch">inch</option>
+      </select>
+    </div>
+
+    <label>Weight</label>
+    <div class="input-group">
+      <input type="number" id="weight" value="70">
+      <select id="weightUnit">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+      </select>
+    </div>
+
+    <button class="calculate-btn" onclick="calculateBMI()">Calculate BMI</button>
+  </div>
+
+  <!-- Right Card -->
+  <div class="card result-card">
+
+    <div class="placeholder" id="placeholder">
+      <div class="circle">📈</div>
+      <p>Fill in your details and click Calculate to see your BMI results</p>
+    </div>
+
+    <div class="result hidden" id="result">
+      <div class="bmi-value" id="bmiValue">0</div>
+      <h3 id="bmiStatus">Normal</h3>
+      <p class="bmi-index" id="bmiIndex">BMI Index: 0 / 5</p>
+
+      <span class="badge">BMI Calculated</span>
+
+      <div class="info" id="bmiInfo"></div>
+
+      <!-- ✅ REDIRECT BUTTONS (FIXED) -->
+      <a href="ideal.html" class="primary-btn">
+        Check Ideal Weight →
+      </a>
+
+      <a href="analysis.html" class="secondary-btn">
+        View Analytics Dashboard
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/bmi.js"></script>
+</body>
+</html>

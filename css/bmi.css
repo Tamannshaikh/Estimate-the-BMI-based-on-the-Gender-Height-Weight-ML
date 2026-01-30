@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* THEMES */
+body.dark {
+  background: linear-gradient(135deg, #1a1533, #4b1b6d);
+  color: #fff;
+}
+
+body.light {
+  background: #f4f6fb;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #45d3ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.nav-links .active {
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.05)
+  );
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Form */
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+.gender-box {
+  display: flex;
+  gap: 15px;
+}
+
+.gender {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.gender.active {
+  border-color: #00e5ff;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input, select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Buttons */
+.calculate-btn,
+.primary-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+}
+
+.secondary-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Result */
+.result-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.bmi-value {
+  font-size: 48px;
+  color: #00ff99;
+}
+
+.bmi-index {
+  margin: 8px 0;
+}
+
+.badge {
+  background: #00c853;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.info {
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a,
+.primary-btn,
+.secondary-btn {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+}
+.primary-btn:hover {
+  background: linear-gradient(90deg, #00e5ff, #9a4dff);
+}
+
+/* -------- LIGHT MODE FIX -------- */
+body.light .secondary-btn {
+  border: 1px solid #333;
+  color: #333;
+  background: transparent;
+}
+
+body.light .primary-btn {
+  color: #fff;
+}
+
+body.light .nav-links a {
+  color: #111;
+}
+
+/* Optional hover for better UX */
+body.light .secondary-btn:hover {
+  background: #eaeaea;
+}
+body.light .primary-btn:hover {
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+}
+/* ================= LIGHT MODE FIX – BMI PAGE ================= */
+
+body.light {
+  background: #f4f6fb;
+  color: #111;
+}
+
+/* Cards */
+body.light .card {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Inputs & Select */
+body.light input,
+body.light select {
+  background: #f4f6fb;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+/* Labels & Text */
+body.light label,
+body.light h1,
+body.light h2,
+body.light h3,
+body.light p {
+  color: #111;
+}
+
+/* Gender buttons */
+body.light .gender {
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+body.light .gender.active {
+  border-color: #6c5ce7;
+}
+
+/* Result info box */
+body.light .info {
+  background: #f1f1f1;
+  color: #111;
+}
+
+/* Secondary button (View Dashboard) */
+body.light .secondary-btn {
+  color: #111;
+  border: 1px solid #111;
+  background: transparent;
+}
+
+body.light .secondary-btn:hover {
+  background: #eaeaea;
+}
+
+/* ===============================
+   CIRCLE VISIBILITY FIX
+   =============================== */
+
+/* LIGHT MODE CIRCLE */
+body.light .circle {
+  background: #e5e7eb;              /* light grey visible */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* OPTIONAL: icon thoda clear dikhe */
+body.light .circle img,
+body.light .circle svg {
+  filter: none;
+}

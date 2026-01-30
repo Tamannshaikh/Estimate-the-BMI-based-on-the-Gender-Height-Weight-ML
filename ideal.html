@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideal Weight Checker</title>
+  <link rel="stylesheet" href="css/ideal.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="dark">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Smart BMI Analyzer</div>
+
+  <ul class="nav-links">
+    <li><a href="bmi.html">BMI Estimator</a></li>
+    <li class="active"><a href="ideal.html">Ideal Weight</a></li>
+    <li><a href="analysis.html">Dashboard</a></li>
+  </ul>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Ideal Weight Checker</h1>
+  <p>Discover your optimal weight range based on scientific formulas</p>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- LEFT CARD -->
+  <div class="card">
+    <h2>Your Information</h2>
+
+    <label>Gender</label>
+    <div class="gender-box">
+      <button class="gender active" onclick="selectGender(this)">Male</button>
+      <button class="gender" onclick="selectGender(this)">Female</button>
+    </div>
+
+    <label>Height</label>
+    <div class="input-group">
+      <input type="number" id="height" value="170">
+      <select id="heightUnit">
+        <option value="cm">cm</option>
+        <option value="ft">ft</option>
+        <option value="inch">inch</option>
+      </select>
+    </div>
+
+    <label>Current Weight</label>
+    <div class="input-group">
+      <input type="number" id="weight" value="70">
+      <select id="weightUnit">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+      </select>
+    </div>
+
+    <button class="calculate-btn" onclick="calculateIdealWeight()">
+      🎯 Calculate Ideal Weight
+    </button>
+  </div>
+
+  <!-- RIGHT CARD -->
+  <div class="card result-card">
+
+    <div id="placeholder">
+      <div class="circle">🎯</div>
+      <p>Fill in your details to discover your ideal weight range</p>
+    </div>
+
+    <div id="result" class="hidden">
+
+      <div class="range">
+        <span>Ideal Weight Range</span>
+        <strong id="rangeText">--</strong>
+      </div>
+
+      <div class="current">
+        <span>Your Current Weight</span>
+        <strong id="currentText">--</strong>
+      </div>
+
+      <div class="progress">
+        <div class="bar" id="progressBar">100%</div>
+      </div>
+
+      <div class="minmax">
+        <span id="minText">Min</span>
+        <span id="maxText">Max</span>
+      </div>
+
+      <div class="status" id="statusText">Status</div>
+
+      <div class="info">
+        <h4>📈 Health Recommendation</h4>
+        <p id="recommendation"></p>
+      </div>
+
+      <!-- ✅ FIXED REDIRECT BUTTONS -->
+      <a href="bmi.html" class="primary-btn">
+        Calculate BMI →
+      </a>
+
+      <a href="analysis.html" class="secondary-btn">
+        View Analytics Dashboard
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="js/ideal.js"></script>
+</body>
+</html>

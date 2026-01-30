@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Analysis Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/analysis.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dark">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Smart BMI Analyzer</div>
+
+  <ul class="nav-links">
+    <li><a href="bmi.html">BMI Estimator</a></li>
+    <li><a href="ideal.html">Ideal Weight</a></li>
+    <li class="active"><a href="analysis_v2.html">Dashboard</a></li>
+  </ul>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- HEADER -->
+<header class="dashboard-header">
+  <h1>BMI Analysis Dashboard</h1>
+  <p>ML based health insights & distribution analysis</p>
+</header>
+
+<!-- FILTER PANEL -->
+<section class="filter-panel">
+  <div class="filter-card">
+    <h3>🔍 Data Filters</h3>
+
+    <div class="filters">
+      <select id="genderFilter" onchange="applyFilters()">
+        <option value="All">All Genders</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <select id="categoryFilter" onchange="applyFilters()">
+        <option value="All">All Categories</option>
+        <option value="0">Extremely Weak</option>
+        <option value="1">Weak</option>
+        <option value="2">Normal</option>
+        <option value="3">Overweight</option>
+        <option value="4">Obesity</option>
+        <option value="5">Extreme Obesity</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-grid">
+  <div class="stat-card">
+    <h2 id="total">0</h2>
+    <p>Total Samples</p>
+  </div>
+
+  <div class="stat-card">
+    <h2 id="avgBMI">0</h2>
+    <p>Average BMI</p>
+  </div>
+
+  <div class="stat-card">
+    <h2 id="male">0</h2>
+    <p>Male</p>
+  </div>
+
+  <div class="stat-card">
+    <h2 id="female">0</h2>
+    <p>Female</p>
+  </div>
+</section>
+
+<!-- CHARTS -->
+<section class="charts-grid">
+
+  <div class="chart-card">
+    <h3>BMI Category Distribution</h3>
+    <canvas id="categoryChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Gender-wise BMI Category</h3>
+    <canvas id="genderChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Height vs Weight Analysis</h3>
+    <canvas id="heightWeightChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>BMI Index Distribution</h3>
+    <canvas id="indexChart"></canvas>
+  </div>
+
+</section>
+
+<!-- JS -->
+<script src="js/analysis.js"></script>
+
+</body>
+</html>
