@@ -1,101 +1,102 @@
-cd backend   
+cd backend
 python app.py
 go Live
 
-github 
+github
 repo - Estimate-BMI-Using-Gender-Height-Weight-ML
 
 
+<h1>Estimate BMI Using Gender, Height & Weight (Machine Learning)</h1>
 
-# Estimate BMI Using Gender, Height & Weight (Machine Learning)
-
-## 📌 Project Overview
-This project estimates **Body Mass Index (BMI)** using **Machine Learning**
-based on **Gender, Height, and Weight**.  
-The system includes a **web-based frontend** and a **Python backend**
+<h2>Project Overview</h2>
+<p>
+This project estimates Body Mass Index (BMI) using Machine Learning
+based on Gender, Height, and Weight.
+The system includes a web-based frontend and a Python backend
 that performs BMI prediction and analysis.
-
----
-
-## 🧠 Machine Learning
-- Dataset: BMI data (CSV & JSON)
-- Model Type: Classification / Regression
-- Features:
-  - Gender
-  - Height (cm)
-  - Weight (kg)
-- Output:
-  - BMI Value
-  - BMI Category (Underweight, Normal, Overweight, Obese)
-
----
-
-## 🌐 Frontend
-- HTML pages:
-  - Home
-  - BMI Calculator
-  - BMI Analysis
-  - Ideal BMI
-- CSS for styling
-- JavaScript for validation & interactivity
-
----
-
-## ⚙️ Backend
-- Python (Flask-based)
-- Handles:
-  - Data processing
-  - Model prediction
-  - Result generation
-
----
-
-## 📁 Project Structure
+</p>
 
 
+<h2>Machine Learning</h2>
+<p><b>Dataset:</b> BMI data (CSV & JSON)</p>
+<p><b>Model Type:</b> Classification / Regression</p>
+<p><b>Features:</b></p>
+<p>Gender</p>
+<p>Height (cm)</p>
+<p>Weight (kg)</p>
+<p><b>Output:</b></p>
+<p>BMI Value</p>
+<p>BMI Category (Underweight, Normal, Overweight, Obese)</p>
+
+
+<h2>Frontend</h2>
+<p>HTML Pages:</p>
+<p>Home</p>
+<p>BMI Calculator</p>
+<p>BMI Analysis</p>
+<p>Ideal BMI</p>
+<p>CSS for styling</p>
+<p>JavaScript for validation and interactivity</p>
+
+
+<h2>Backend</h2>
+<p>Python (Flask-based)</p>
+<p>Handles:</p>
+<p>Data processing</p>
+<p>Model prediction</p>
+<p>Result generation</p>
+
+
+<h2>Project Structure</h2>
+<pre>
 BMI/
-│
-├── assets/
-│   ├── hero.png
-│   ├── hero2.png
-│   └── hero3.png
-│
-├── backend/
-│   ├── data/
-│   │   ├── bmi.csv
-│   │   ├── BMI_Predictions.csv
-│   │   ├── BMI_Full_Predictions.csv
-│   │   └── BMI_Full_Predictions.json
-│   │
-│   ├── BMI_Classification_Project.ipynb
-│   └── app.py
-│
-├── css/
-│   ├── analysis.css
-│   ├── bmi.css
-│   ├── ideal.css
-│   └── style.css
-│
-├── js/
-│   ├── analysis.js
-│   ├── bmi.js
-│   ├── ideal.js
-│   └── script.js
-│
-├── index.html
-├── bmi.html
-├── analysis.html
-├── ideal.html
-│
-├── (Tamanna-minor) Estimate the BMI.pdf
-└── README.md
+
+assets/
+   hero.png
+   hero2.png
+   hero3.png
+
+backend/
+   data/
+      bmi.csv
+      BMI_Predictions.csv
+      BMI_Full_Predictions.csv
+      BMI_Full_Predictions.json
+
+   BMI_Classification_Project.ipynb
+   app.py
+
+css/
+   analysis.css
+   bmi.css
+   ideal.css
+   style.css
+
+js/
+   analysis.js
+   bmi.js
+   ideal.js
+   script.js
+
+images/
+   BMI.png
+   BMIestimator.png
+   DashBoard.png
+   GetStarted.png
+   Ideal.png
+   IdealWeight.png
+
+index.html
+bmi.html
+analysis.html
+ideal.html
+
+(Tamanna-minor) Estimate the BMI.pdf
+README.md
+</pre>
 
 
-git add .
-git commit -m "Updated BMI logic"
-git push
-
-<h2>Project Images:</h2>
+<h2>Project Images</h2>
 
 <h3>Get Started Page</h3>
 <img src="images/GetStarted.png" width="800">
@@ -114,3 +115,11 @@ git push
 
 <h3>Dashboard</h3>
 <img src="images/DashBoard.png" width="800">
+
+
+<h2>Git Commands</h2>
+<pre>
+git add .
+git commit -m "Updated BMI logic"
+git push
+</pre>
