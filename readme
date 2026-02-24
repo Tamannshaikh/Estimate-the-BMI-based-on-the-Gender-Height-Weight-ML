@@ -91,13 +91,14 @@ BMI/
 └── README.md
 
 
-git add
+git add .
 git commit -m "Updated BMI logic"
 git push
 
-Project Images:
+<h2>Project Images:</h2>
 
-<h2>Project Screenshots</h2>
+<h3>Get Started Page</h3>
+<img src="images/GetStarted.png" width="800">
 
 <h3>BMI Page</h3>
 <img src="images/BMI.png" width="800">
@@ -105,14 +106,11 @@ Project Images:
 <h3>BMI Estimator</h3>
 <img src="images/BMIestimator.png" width="800">
 
-<h3>Dashboard</h3>
-<img src="images/DashBoard.png" width="800">
-
-<h3>Get Started Page</h3>
-<img src="images/GetStarted.png" width="800">
-
 <h3>Ideal BMI Page</h3>
 <img src="images/Ideal.png" width="800">
 
 <h3>Ideal Weight Page</h3>
 <img src="images/IdealWeight.png" width="800">
+
+<h3>Dashboard</h3>
+<img src="images/DashBoard.png" width="800">
