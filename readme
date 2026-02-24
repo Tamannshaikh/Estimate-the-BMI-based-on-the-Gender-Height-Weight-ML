@@ -1,125 +1,87 @@
+Estimate BMI Using Gender, Height & Weight (Machine Learning)
+
+An AI-based system to estimate Body Mass Index (BMI) using Machine Learning.
+The application provides BMI prediction, category classification, and an interactive user interface for analysis.
+
+
+------------------------------------------------------------
+
+Features
+
+- BMI prediction using Gender, Height and Weight
+- Machine Learning based classification
+- BMI category detection (Underweight, Normal, Overweight, Obese)
+- Interactive web interface
+- Ideal weight analysis
+- Dashboard visualization
+
+
+------------------------------------------------------------
+
+AI / ML Used
+
+- Data preprocessing using Pandas
+- Feature encoding
+- Classification / Regression model
+- Model training and prediction using scikit-learn
+
+
+------------------------------------------------------------
+
+Tech Stack
+
+Python
+Flask
+scikit-learn
+Pandas
+HTML
+CSS
+JavaScript
+
+
+------------------------------------------------------------
+
+How to Run
+
+Go to project folder
 cd backend
+
+Run the application
 python app.py
-go Live
 
-github
-repo - Estimate-BMI-Using-Gender-Height-Weight-ML
+Open in browser
+http://127.0.0.1:5000
 
-
-<h1>Estimate BMI Using Gender, Height & Weight (Machine Learning)</h1>
-
-<h2>Project Overview</h2>
-<p>
-This project estimates Body Mass Index (BMI) using Machine Learning
-based on Gender, Height, and Weight.
-The system includes a web-based frontend and a Python backend
-that performs BMI prediction and analysis.
-</p>
+Or use Live Server for frontend pages
 
 
-<h2>Machine Learning</h2>
-<p><b>Dataset:</b> BMI data (CSV & JSON)</p>
-<p><b>Model Type:</b> Classification / Regression</p>
-<p><b>Features:</b></p>
-<p>Gender</p>
-<p>Height (cm)</p>
-<p>Weight (kg)</p>
-<p><b>Output:</b></p>
-<p>BMI Value</p>
-<p>BMI Category (Underweight, Normal, Overweight, Obese)</p>
+------------------------------------------------------------
 
+Project Screenshots
 
-<h2>Frontend</h2>
-<p>HTML Pages:</p>
-<p>Home</p>
-<p>BMI Calculator</p>
-<p>BMI Analysis</p>
-<p>Ideal BMI</p>
-<p>CSS for styling</p>
-<p>JavaScript for validation and interactivity</p>
-
-
-<h2>Backend</h2>
-<p>Python (Flask-based)</p>
-<p>Handles:</p>
-<p>Data processing</p>
-<p>Model prediction</p>
-<p>Result generation</p>
-
-
-<h2>Project Structure</h2>
-<pre>
-BMI/
-
-assets/
-   hero.png
-   hero2.png
-   hero3.png
-
-backend/
-   data/
-      bmi.csv
-      BMI_Predictions.csv
-      BMI_Full_Predictions.csv
-      BMI_Full_Predictions.json
-
-   BMI_Classification_Project.ipynb
-   app.py
-
-css/
-   analysis.css
-   bmi.css
-   ideal.css
-   style.css
-
-js/
-   analysis.js
-   bmi.js
-   ideal.js
-   script.js
-
-images/
-   BMI.png
-   BMIestimator.png
-   DashBoard.png
-   GetStarted.png
-   Ideal.png
-   IdealWeight.png
-
-index.html
-bmi.html
-analysis.html
-ideal.html
-
-(Tamanna-minor) Estimate the BMI.pdf
-README.md
-</pre>
-
-
-<h2>Project Images</h2>
+<div align="center">
 
 <h3>Get Started Page</h3>
-<img src="images/GetStarted.png" width="800">
+<img src="images/GetStarted.png" width="800"/>
 
 <h3>BMI Page</h3>
-<img src="images/BMI.png" width="800">
+<img src="images/BMI.png" width="800"/>
 
 <h3>BMI Estimator</h3>
-<img src="images/BMIestimator.png" width="800">
+<img src="images/BMIestimator.png" width="800"/>
 
 <h3>Ideal BMI Page</h3>
-<img src="images/Ideal.png" width="800">
+<img src="images/Ideal.png" width="800"/>
 
 <h3>Ideal Weight Page</h3>
-<img src="images/IdealWeight.png" width="800">
+<img src="images/IdealWeight.png" width="800"/>
 
 <h3>Dashboard</h3>
-<img src="images/DashBoard.png" width="800">
+<img src="images/DashBoard.png" width="800"/>
+
+</div>
 
 
-<h2>Git Commands</h2>
-<pre>
-git add .
-git commit -m "Updated BMI logic"
-git push
-</pre>
+------------------------------------------------------------
+
+Developed by Tamanna
