@@ -173,6 +173,7 @@ function chartOptions(withAxes = false) {
 
   return {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         labels: { color }

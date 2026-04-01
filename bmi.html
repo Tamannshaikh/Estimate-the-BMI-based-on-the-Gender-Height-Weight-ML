@@ -43,7 +43,7 @@
 
     <label>Height</label>
     <div class="input-group">
-      <input type="number" id="height" value="170">
+      <input type="number" id="height" placeholder="170">
       <select id="heightUnit">
         <option value="cm">cm</option>
         <option value="ft">ft</option>
@@ -53,14 +53,14 @@
 
     <label>Weight</label>
     <div class="input-group">
-      <input type="number" id="weight" value="70">
+      <input type="number" id="weight" placeholder="70">
       <select id="weightUnit">
         <option value="kg">kg</option>
         <option value="lbs">lbs</option>
       </select>
     </div>
 
-    <button class="calculate-btn" onclick="calculateBMI()">Calculate BMI</button>
+    <button class="calculate-btn" id="calcBtn" disabled onclick="calculateBMI()">Calculate BMI</button>
   </div>
 
   <!-- Right Card -->
@@ -94,6 +94,15 @@
 
 </div>
 
+<footer class="footer">
+  <p>&copy; 2026 Smart BMI Analyzer. All rights reserved.</p>
+</footer>
+
 <script src="js/bmi.js"></script>
+
+<!-- Particles JS molecule network -->
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/particles-config.js"></script>
 </body>
 </html>

@@ -50,3 +50,19 @@ function calculateBMI() {
     `Your BMI category is "${map[index]}".`;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const heightInput = document.getElementById("height");
+  const weightInput = document.getElementById("weight");
+  const calcBtn = document.getElementById("calcBtn");
+
+  function checkInputs() {
+    if (heightInput.value.trim() !== "" && weightInput.value.trim() !== "") {
+      calcBtn.disabled = false;
+    } else {
+      calcBtn.disabled = true;
+    }
+  }
+
+  heightInput.addEventListener("input", checkInputs);
+  weightInput.addEventListener("input", checkInputs);
+});
