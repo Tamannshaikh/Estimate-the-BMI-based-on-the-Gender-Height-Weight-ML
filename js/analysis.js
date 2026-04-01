@@ -1,5 +1,5 @@
 /* ===================== CONFIG ===================== */
-const API_URL = "http://127.0.0.1:5000/api/bmi";
+const API_URL = "/api/bmi";
 
 const CATEGORY_MAP = {
   0: "Extremely Weak",
